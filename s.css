@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100;1,200&display=swap');
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+html{
+
+  margin: 0%;
+  padding: 0%;
+  box-sizing : border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('alice-e6fhEghzFJU-unsplash.jpg')no-repeat;
+  background-size: cover;
+  background-position:center;
+  background-attachment: fixed;
+
+}
+
+header{
+  position : fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  z-index: 99;
+
+}
+.logo{
+
+  font-size: 1.5em;
+  color: black;
+  user-select: none;
+}
+
+.box{
+    position: relative;
+}
+
+.input {
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+    background: none;
+    border: 4px solid black;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: black;
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 350px;
+    background: transparent;
+    border-radius: 10px;
+}
+.box ion-icon{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: black;
+    transition: .2s;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+
+.navigation a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform.3s;
+}
+
+.navigation a:hover::after{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+.navigation .btnlogin-popup{
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: black;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+
+}
+
+.navigation .btnlogin-popup:hover{
+  background: white
+  color: #162938;
+}
+
+
+
+
+ .content{
+
+    position: relative;
+    width: 100%;
+    height: 93%;
+    /* border: 1px solid black; */
+}
+
+
+
+
+
+
+
+
+ .content::before{
+    
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 80%;
+/* border: 1px solid black; */
+    background: url('background1.png') no-repeat center center/ cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+
+
+.content .cont_box {
+
+    width: 500px;
+    height: auto;
+    color: white;
+    padding: 30px;
+}
+
+
+.content .cont_box h1{
+     
+    line-height: 40px;
+    font-weight: 800;
+    /*border: 1px solid black;*/
+}
+
+
+.content .cont_box p{
+     
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(241, 241, 241);
+
+}
+
+.content .cont_box button{
+
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: black;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: linear;
+}
+
+.content .cont_box button:hover{
+
+    background: rgb(113, 113, 113);
+    border: 2px solid rgb(113, 113, 113);
+}
+
+
+.trip_box{
+
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    /*border: 1px solid black;*/
+
+}
+
+
+
+
+.trip_box .search_box{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px rgb(11, 11, 11);
+    z-index: 1;
+    padding: 10px 20px;
+
+}
+
+.trip_box .search_box .card{
+
+    width: 200px;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+
+.trip_box .search_box .card h4{
+
+    font-size: 15px;
+    margin: 0;
+    font-weight: 700;
+}
+
+
+.trip_box .search_box .card h4 .bi{
+
+    position: absolute;
+    font-size: 13px;
+    margin: 2px 0px 0px 5px;
+    transition: .2s linear;
+}
+
+
+.trip_box .search_box .card input{
+
+    margin-top: 3px;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+
+.trip_box .search_box input[type="button"]{
+
+    background: black;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.trip_box .search_box input[type="button"]:hover{
+
+    background: grey; 
+}
+
+
+.trip_box .travell_box {
+
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: auto;
+      top: 30px;
+      /* border: 1px solid black; */
+      border-radius: 10px;
+      padding-bottom: 20px;
+      box-shadow: 0px 25px -10px rgb(165, 165, 165);
+    
+}
+
+.trip_box .travell_box::before {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(241, 241, 241, .7);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+.trip_box .travell_box h4 {
+
+    margin: 0;
+    padding: 60px 0px 15px 1.7%;
+}
+
+.trip_box .travell_box .cards{
+
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.trip_box .travell_box .cards .card{
+
+    width: 220px;
+    height: 180px; 
+    /* border: 1px solid black; */
+
+}
+
+
+
+
+.trip_box .travell_box .cards .card h3{
+
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
+.trip_box .travell_box .cards .card h3 img{
+
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+
+
+
+.trip_box .travell_box .cards .card img{
+
+    width: 100%;
+    height: 50%;
+}
+
+
+
+.trip_box .travell_box .cards .card .btn_city{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+
+
+
+.trip_box .travell_box .cards .card .btn_city a{
+
+    text-decoration: none;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 20px;
+    font-size: 11px;
+    transition: .3s linear;
+
+}
+
+
+
+
+
+.trip_box .travell_box .cards .card .btn_city a:hover{
+
+    background: grey;
+}
+
+
+
+
+.trip_box .travell_box .cards .card .btn_city h5{
+
+    font-size: 11px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 5px;
+    line-height: 15px;
+}
+
+
+.trip_box .travell_box .cards .card .btn_city h5 span{
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
